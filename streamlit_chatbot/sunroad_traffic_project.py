@@ -1,4 +1,4 @@
-import streamlit as st
+import streamlit as st # type: ignore
 import random
 
 # Set up the page
@@ -44,7 +44,6 @@ def get_traffic_info(location):
         "tip": random.choice(tips)
     }
 
-# Display traffic info after selection
 if location:
     info = get_traffic_info(location)
     st.success(f"📍 Location: {info['location']}")
